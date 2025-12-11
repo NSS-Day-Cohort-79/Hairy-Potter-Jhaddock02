@@ -4,7 +4,9 @@ export const PotteryList = () => {
     const potteryToSell = usePottery();
     let potteryHTML = '';
 
+
     for (const pottery of potteryToSell) {
+
         potteryHTML += `
         <section class="pottery" id="pottery--${pottery.id}">
        <h2 class="pottery__shape">${pottery.shape}</h2>
